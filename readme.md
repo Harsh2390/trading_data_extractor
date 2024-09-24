@@ -13,7 +13,7 @@ This project is a Python-based data extractor designed to scrape and gather stoc
 
 ## Code Explanation
 ### Web Scraping
-The [scrape_detail_page](https://stockanalysis.com/markets/losers/) function scrapes a webpage to retrieve a table of the top losers in the stock market. It uses BeautifulSoup to parse HTML and extract table data into a Pandas DataFrame.
+The scrape_detail_page function scrapes a webpage(https://stockanalysis.com/robots.txt) to retrieve a table of the top losers in the stock market. It uses BeautifulSoup to parse HTML and extract table data into a Pandas DataFrame.
 ### API Data Retrieval
 The script uses Alpha Vantage's API to fetch detailed stock information based on tickers obtained from the scraping process. It then cleans this data by removing unnecessary columns.
 Additionally, Yahoo Finance's API (via yfinance) is used to obtain further financial statistics for each stock, which are stored in another CSV file.
